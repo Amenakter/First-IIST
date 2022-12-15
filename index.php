@@ -1,67 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <body>
-    <?php
-// foreach
 
-        $color = array("red" , "orange", "blue", "green", "yellow");
+<h1>My first PHP page</h1>
 
-        foreach ($color as $value){
-            echo "$value <br>";
-        }
+<?php
+
+// variable
+$color = "red";
+
+$text = "text";
+$text2 = "this is text two ";
 
 
-    $students = array ("Amena" => 100, "Tania" => 500, "Maksuda" => 200, "Sharmin" => 400, "Sohana" =>100, "Sultana" => 300);
+echo "this is text one, " .$text2.", this is text three. <br>";
+echo "this is $text <br>";
+echo $color ."<br>";
+echo "My first PHP page <br>";
 
-    echo "<br> {$students['Amena']} <br>";
-    foreach($students as $name => $tk){
-     echo $name . " : " . $tk . "tk". "<br>";
-    
+
+// sum
+
+$x= 5;
+$y = 10;
+
+echo  "Sum :". $x + $y ."<br>";
+
+function sum (){
+    $a = 10;
+    echo $a;
+}
+
+sum();
+
+
+$data = array('text1', 'text2');
+
+var_dump($data);
+
+
+
+
+// class
+class Car {
+    public $model = "Mercedes Bense";
+    public $color = "red";
+    public function message() {
+      return "<br> My car is a " . $this->color . " " . $this->model . "!";
     }
+  }
 
-    // function
-
-    function sum($x , $y){
-        return $x + $y;
-    }
-
-    $v = sum(5 , 5);
-    echo "Sum : $v <br>";
-    $v2 = sum(10 , 5);
-    echo "Sum : $v2 <br>";
+  $myCar = new Car();
+  echo $myCar->message() ;
 
 
-    function simple ($x , $y) {
-        $z = $x**2 + 3*$x + 9*$y + 6*($y**2) + 32*$x + 7*($y**3);
-        return $z;
-    }
 
-    $v3 = simple(2, 3);
-    echo "(a+b)<sup>3</sup> = $v3 <br>";
-    $v4 = simple(3, 3);
-    echo "(a+b)<sup>3</sup> = $v4";
-
-    // indexed
-
-
-    $cars = array("Volvo", "BMW", "Toyota");
-
-    echo "<br> I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ". <br>";
-    
-    $arrlength = count( $cars);
-
-    for($x = 0; $x < $arrlength; $x++) {
-        echo $cars[$x];
-        echo "<br>";
-      }
-      
-    echo "array length : $arrlength ";
-
-    ?>
-
-
+?>
 
 </body>
-
-</html>
+</html>    
