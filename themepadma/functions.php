@@ -51,6 +51,91 @@ function wpdocs_theme_slug_widgets_init() {
 		'after_widget'  => ' ',
 		
 	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Lineleft', 'textdomain' ),
+		'id'            => 'lineleft',
+		'before_widget' => ' ',
+		'after_widget'  => ' ',
+		
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Phototitle', 'textdomain' ),
+		'id'            => 'phototitle',
+		'before_widget' => ' ',
+		'after_widget'  => ' ',
+		
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Line Right', 'textdomain' ),
+		'id'            => 'lineright',
+		'before_widget' => ' ',
+		'after_widget'  => ' ',
+		
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Photo Card1', 'textdomain' ),
+		'id'            => 'photocard1',
+		'before_widget' => ' ',
+		'after_widget'  => ' ',
+		
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Photo Card2', 'textdomain' ),
+		'id'            => 'photocard2',
+		'before_widget' => ' ',
+		'after_widget'  => ' ',
+		
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Photo Card3', 'textdomain' ),
+		'id'            => 'photocard3',
+		'before_widget' => ' ',
+		'after_widget'  => ' ',
+		
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Photo Card4', 'textdomain' ),
+		'id'            => 'photocard4',
+		'before_widget' => ' ',
+		'after_widget'  => ' ',
+		
+	) );
+	register_sidebar( array(
+		'name'          => __( 'News title', 'textdomain' ),
+		'id'            => 'newstitle',
+		'before_widget' => ' ',
+		'after_widget'  => ' ',
+		
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer left', 'textdomain' ),
+		'id'            => 'ftleft',
+		'before_widget' => ' ',
+		'after_widget'  => ' ',
+		
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer right', 'textdomain' ),
+		'id'            => 'ftright',
+		'before_widget' => ' ',
+		'after_widget'  => ' ',
+		
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer bottom left', 'textdomain' ),
+		'id'            => 'fbleft',
+		'before_widget' => ' ',
+		'after_widget'  => ' ',
+		
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer bottom right', 'textdomain' ),
+		'id'            => 'fbright',
+		'before_widget' => ' ',
+		'after_widget'  => ' ',
+		
+	) );
 }
 add_action( 'widgets_init', 'wpdocs_theme_slug_widgets_init' );
 
